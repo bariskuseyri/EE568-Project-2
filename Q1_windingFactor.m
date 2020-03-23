@@ -1,8 +1,9 @@
 %% Intro
 % Calculating distribution factor, pitch factor and winding factor for a
 % 20-pole, 120-slot, 3-phase machine
-% Author: Bar?? Kuseyri<baris.kuseyri@metu.edu.tr>
-% version 1.0 | 19/3/2020
+% Author: Baris Kuseyri<baris.kuseyri@metu.edu.tr>
+% version 1.0 | 19/03/2020
+% version 1.1 | 23/03/2020
 
 %% Machine Parameters
 
