@@ -1,7 +1,9 @@
 %% Intro
 % Calculating distribution factor, pitch factor and winding factor for a
 % 22-pole, 27-slot, 3-phase machine
+%
 % Author: Baris Kuseyri<baris.kuseyri@metu.edu.tr>
+%
 % version 1.0 | 23/03/2020
 
 %% Initialization

@@ -1,13 +1,18 @@
 %% Intro
-% Calculating distribution factor, pitch factor and winding factor for a
-% 22-pole, 21-slot, 3-phase machine
-% Author: Baris Kuseyri<baris.kuseyri@metu.edu.tr>
+% Distribution factor, pitch factor and winding factor
+% EM: 24-slot / 22-pole, 3-phase | double layer | coil span: 1 slot
+%
+% Author: Baris Kuseyri <baris.kuseyri@metu.edu.tr>
+%
 % version 1.0 | 24/03/2020
 
-%% Machine Parameters
+%% Initialization
 
 clc
 clear all
+close all
+
+%% Machine Parameters
 
 m=3;    %phase number
 Q=21;   %number of slots

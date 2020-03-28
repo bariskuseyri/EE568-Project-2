@@ -1,6 +1,7 @@
 %% Intro
-% Calculating distribution factor, pitch factor and winding factor for a
-% 20-pole, 120-slot, 3-phase machine
+% Phase angle of the induced voltage in each slot
+% EM: 27-slot / 22-pole, 3-phase | double layer | coil span: 1 slot
+%
 % Author: Baris Kuseyri <baris.kuseyri@metu.edu.tr>
 % 
 % version 1.0 | 19/03/2020
@@ -8,14 +9,15 @@
 
 clc
 clear all
+close all
 
 %% Machine Parameters
 
 m = 3;      % phase number
-Q = 27;    % number of slots
+Q = 27;     % number of slots
 p = 22;     % number of poles
 l = 1;      % number of layers
-cs = 6;     % coil span [slots]
+cs = 1;     % coil span [slots]
 
 
 pp = p/2;           % number of pole-pairs
@@ -30,11 +32,16 @@ ppe=(2*pi)*pp/p;   % pole pitch (electrical)
 lambdam = spm*cs;      % coil pitch (mechanical)
 lambdae = spm*cs*pp;   % coil pitch (electrical)
 
-h = 1:27;
+pA = zeros(2,27);
 
 for i = 1:27
-    pA(i) = mod(spe*(360/(2*pi))*(i-1), 360);
+    pA(1,i) = i;
+    pA(2,i) = round(mod(spe*(360/(2*pi))*(i-1), 360),2);
 end
 
+pAT = array2table(pA);
+
+writetable(pAT,'phaseAngle.txt');
+% type tabledata.txt;
 
 

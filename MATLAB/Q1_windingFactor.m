@@ -1,6 +1,7 @@
 %% Intro
-% Calculating distribution factor, pitch factor and winding factor for a
-% 20-pole, 120-slot, 3-phase machine
+% Distribution factor, pitch factor and winding factor
+% EM: 120-slot / 20-pole, 3-phase | double layer | coil span: 6 slot
+%
 % Author: Baris Kuseyri <baris.kuseyri@metu.edu.tr>
 % 
 % version 1.0 | 19/03/2020
@@ -11,6 +12,7 @@
 
 clc
 clear all
+close all
 
 %% Machine Parameters
 
@@ -63,7 +65,8 @@ end
 
 %% Results
 
-subplot(3,1,1)
+% subplot(3,1,1)
+figure(1)
 g1 = stem(h,abs(kw));
 ax = gca;
 ax.XGrid = 'off';
@@ -75,7 +78,9 @@ xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
 
-subplot(3,1,2)
+
+% subplot(3,1,2)
+figure(2)
 g2 = stem(h,abs(kp));
 ax = gca;
 ax.XGrid = 'off';
@@ -87,7 +92,8 @@ xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
 
-subplot(3,1,3)
+% subplot(3,1,3)
+figure(3)
 g3 = stem(h,abs(kd));
 ax = gca;
 ax.XGrid = 'off';
