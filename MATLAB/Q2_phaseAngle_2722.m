@@ -32,6 +32,8 @@ ppe=(2*pi)*pp/p;   % pole pitch (electrical)
 lambdam = spm*cs;      % coil pitch (mechanical)
 lambdae = spm*cs*pp;   % coil pitch (electrical)
 
+%% Results
+
 pA = zeros(2,27);
 
 for i = 1:27
@@ -41,7 +43,7 @@ end
 
 pAT = array2table(pA);
 
-writetable(pAT,'phaseAngle.txt');
+writetable(pAT,'phaseAngle_2722.txt');
 % type tabledata.txt;
 
 
