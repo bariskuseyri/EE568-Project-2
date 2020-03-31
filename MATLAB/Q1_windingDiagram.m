@@ -73,7 +73,7 @@ for i = -7 : 20
         x = [0 0.1; 0 0.1] + i;
         y = [-0.1 0; 4 4];
         line(x,y,'Color','k','LineStyle','-')
-        text(x(1,2),y(1,2)-2.5,num2str(mod(i+Q,Q+1)),'HorizontalAlignment','center','VerticalAlignment','cap')
+        text(x(1,2),y(1,2)-2.5,num2str(mod(i+Q,Q)),'HorizontalAlignment','center','VerticalAlignment','cap')
         
         x_end = [x(1,2) x(1,1)+3];
         y_end = [y(2,2) y(2,2)+2];
@@ -106,7 +106,7 @@ for i = -7 : 20
         x = [0 0.1; 0 0.1] + i;
         y = [-0.1 0; 4 4];
         line(x,y,'Color','k','LineStyle','--')
-        text(x(1,2),y(1,2)-2.5,num2str(mod(i+Q,Q+1)),'HorizontalAlignment','center','VerticalAlignment','cap')
+        text(x(1,2),y(1,2)-2.5,num2str(mod(i+Q,Q)),'HorizontalAlignment','center','VerticalAlignment','cap')
         
         x_end = [x(1,2) x(1,1)+3];
         y_end = [y(2,2) y(2,2)+2];

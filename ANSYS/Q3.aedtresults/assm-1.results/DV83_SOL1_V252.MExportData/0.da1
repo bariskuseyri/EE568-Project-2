@@ -2,7 +2,7 @@ MachineType 4
 UnitSystem 1
 
 B_MACHINE
- FrictionLoss 12
+ FrictionLoss 0
  WindLoss 0
  ReferenceSpeed 1000
  NumberOfPoles 22

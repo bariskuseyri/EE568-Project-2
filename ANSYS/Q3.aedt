@@ -1769,7 +1769,7 @@ $begin 'AnsoftProject'
 				DataID=0
 				ParentID=-1
 				DataName='Machine'
-				FrictionLoss='12W'
+				FrictionLoss='0W'
 				WindLoss='0W'
 				ReferenceSpeed='1000rpm'
 				NumberOfPoles=22
@@ -1961,11 +1961,11 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=205
+				V=252
 				$begin 'Setup'
 					N='Setup1'
-					V=205
-					Soln(N='Performance', V=205)
+					V=252
+					Soln(N='Performance', V=252)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -2015,7 +2015,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Machine(Frame(ActivePage('Diagram', View(WindowPos(3, -1, -1, -18, -74, 0, 0, 592, 354)))), Frame(ActivePage('Main', View(WindowPos(5, -1, -1, -18, -74, 88, 116, 684, 470))))))
+						Circuit(Machine(Frame(ActivePage('Diagram', View(WindowPos(5, -1, -1, -18, -74, 0, 0, 592, 354)))), Frame(ActivePage('Winding Editor', View(WindowPos(3, -1, -1, -18, -74, 88, 116, 684, 470)), View(WindowPos(3, -1, -1, -18, -74, 88, 116, 684, 470))))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'

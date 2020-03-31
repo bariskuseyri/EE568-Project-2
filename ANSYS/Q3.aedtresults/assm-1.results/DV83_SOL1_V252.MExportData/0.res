@@ -9,7 +9,7 @@ Rated Output Power (kW):	20
 Rated Voltage (V):	138
 Number of Poles:	22
 Frequency (Hz):	183.333
-Frictional Loss (W):	12
+Frictional Loss (W):	0
 Windage Loss (W):	0
 Rotor Position:	Inner
 Type of Circuit:	Y3
@@ -143,8 +143,8 @@ Correction Factor for Magnetic
 Correction Factor for Magnetic
   Circuit Length of Rotor Yoke:	0.727714
 
-No-Load Line Current (A):	1.40397
-No-Load Input Power (W):	52.0488
+No-Load Line Current (A):	1.39319
+No-Load Input Power (W):	39.9198
 Cogging Torque (N.m):	0.0122428
 
 
@@ -160,19 +160,19 @@ Root-Mean-Square Phase Current (A):	10.4056
 Armature Thermal Load (A^2/mm^3):	1558.16
 Specific Electric Loading (A/mm):	77.5055
 Armature Current Density (A/mm^2):	20.1038
-Frictional and Windage Loss (W):	12
+Frictional and Windage Loss (W):	0
 Iron-Core Loss (W):	28.5267
 Armature Copper Loss (W):	627.624
-Total Loss (W):	668.151
-Output Power (W):	1628.15
+Total Loss (W):	656.151
+Output Power (W):	1640.15
 Input Power (W):	2296.3
-Efficiency (%):	70.9031
+Efficiency (%):	71.4257
 
 Synchronous Speed (rpm):	1000
-Rated Torque (N.m):	15.5477
+Rated Torque (N.m):	15.6622
 Torque Angle (degree):	78
 
-Maximum Output Power (W):	1628.15
+Maximum Output Power (W):	1640.15
 
 
      WINDING ARRANGEMENT

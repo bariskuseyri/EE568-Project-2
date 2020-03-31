@@ -1,11 +1,18 @@
-\contentsline {section}{\numberline {1}Integral-Slot Winding Design}{2}%
-\contentsline {subsection}{\numberline {1.1}Winding Diagram}{2}%
-\contentsline {subsection}{\numberline {1.2}Distribution, Pitch and Winding Factors}{2}%
-\contentsline {section}{\numberline {2}Fractional-Slot Winding Design}{2}%
-\contentsline {subsection}{\numberline {2.1}27-slot/22-pole EM}{2}%
-\contentsline {subsubsection}{\numberline {2.1.1}Phase Angle of Induced Voltage in each Slot}{2}%
-\contentsline {subsubsection}{\numberline {2.1.2}Phasor Diagram}{2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Distribution, Pitch and Winding Factors}{2}%
-\contentsline {subsubsection}{\numberline {2.1.4}Phase Angle of Induced Voltage in each Slot}{2}%
-\contentsline {subsection}{\numberline {2.2}24-slot/22-pole EM}{2}%
-\contentsline {section}{\numberline {3}2-D FEA Modelling}{2}%
+\contentsline {section}{\hbox to\@tempdima {1\hfil }Integral-Slot Winding Design: 120 slot / 20 pole}{2}%
+\contentsline {subsection}{\hbox to\@tempdima {1.1\hfil }Winding Diagram}{2}%
+\contentsline {subsection}{\hbox to\@tempdima {1.2\hfil }Distribution, Pitch and Winding Factors}{3}%
+\contentsline {section}{\hbox to\@tempdima {2\hfil }Fractional-Slot Winding Design}{6}%
+\contentsline {subsection}{\hbox to\@tempdima {2.1\hfil }27-slot/22-pole EM}{6}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.1.1\hfil }Phase Angle of Induced Voltage in each Slot}{6}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.1.2\hfil }Phasor Diagram}{7}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.1.3\hfil }Distribution, Pitch and Winding Factors}{9}%
+\contentsline {subsection}{\hbox to\@tempdima {2.2\hfil }24-slot/22-pole EM}{9}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.2.1\hfil }Phase Angle of Induced Voltage in each Slot}{9}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.2.2\hfil }Phasor Diagram}{9}%
+\contentsline {subsubsection}{\hbox to\@tempdima {2.2.3\hfil }Distribution, Pitch and Winding Factors}{11}%
+\contentsline {subsection}{\hbox to\@tempdima {2.3\hfil }Evaluation}{12}%
+\contentsline {section}{\hbox to\@tempdima {3\hfil }2-D FEA Modelling: 27-slot/22-pole EM}{14}%
+\contentsline {subsection}{\hbox to\@tempdima {3.1\hfil }2-D drawing and winding diagram}{14}%
+\contentsline {subsection}{\hbox to\@tempdima {3.2\hfil }Airgap flux density distribution}{14}%
+\contentsline {subsection}{\hbox to\@tempdima {3.3\hfil }Induced voltage waveforms (for phase and line-to-line) at rated speed}{14}%
+\contentsline {subsection}{\hbox to\@tempdima {3.4\hfil }Cogging torque}{15}%

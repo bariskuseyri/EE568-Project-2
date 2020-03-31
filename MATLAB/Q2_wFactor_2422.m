@@ -56,6 +56,7 @@ ylabel('|{\itK_{dn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 
 figure(2)
 g2 = stem(h,abs(kp));
@@ -69,6 +70,7 @@ ylabel('|{\itK_{pn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 
 figure(3)
 g3 = stem(h,abs(kw));
@@ -82,4 +84,5 @@ ylabel('|{\itK_{wn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 

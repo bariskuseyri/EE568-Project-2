@@ -83,8 +83,8 @@ Winding_Temperature_at_which_Pcu_Input=20
 [Losses_At_RPM_Ref]
 Brush_Friction_Loss_@Ref_Speed=0
 Brush_VI_Loss_@Ref_Speed=0
-Friction_Loss_[F]_@Ref_Speed=6
-Friction_Loss_[R]_@Ref_Speed=6
+Friction_Loss_[F]_@Ref_Speed=0
+Friction_Loss_[R]_@Ref_Speed=0
 Losses_for_single_reference_speed=True
 Rotor_Copper_Stray_Load_Loss_@Ref_Speed=0
 Rotor_Iron_Loss_@Ref_Speed_[Back_Iron]=14.2634

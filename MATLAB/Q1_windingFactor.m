@@ -35,7 +35,7 @@ ppe=(2*pi)*pp/p;   % pole pitch (electrical)
 lambdam = spm*cs;      % coil pitch (mechanical)
 lambdae = spm*cs*pp;   % coil pitch (electrical)
 
-h=1:21;
+h=1:2:21;
 
 %% Fundamental h=1
 
@@ -57,26 +57,26 @@ h=1:21;
 
 %% Factors (Generalized)
 
-for i=1:21
-    kd(i)=(sin(i*q*(spe/2)))/(q*sin((i*spe/2)));
-    kp(i)=sin((i*lambdae)/2);
-    kw(i)=kd(i)*kp(i);
+for i=1:2:21
+    kd(i/2+1/2)=(sin(i*q*(spe/2)))/(q*sin((i*spe/2)));
+    kp(i/2+1/2)=sin((i*lambdae)/2);
+    kw(i/2+1/2)=kd(i/2+1/2)*kp(i/2+1/2);
 end
 
 %% Results
 
 % subplot(3,1,1)
 figure(1)
-g1 = stem(h,abs(kw));
+g3 = stem(h,abs(kd));
 ax = gca;
 ax.XGrid = 'off';
 ax.YGrid = 'on';
-title('Winding Factor Amplitudes')
-xlabel('Harmonic Index, {\it n}') 
-ylabel('|{\itK_{wn}}|')
+title('Distribution Factor Amplitudes','FontSize',14)
+ylabel('|{\itK_{dn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 
 
 % subplot(3,1,2)
@@ -85,25 +85,26 @@ g2 = stem(h,abs(kp));
 ax = gca;
 ax.XGrid = 'off';
 ax.YGrid = 'on';
-title('Pitch Factor Amplitudes')
-xlabel('Harmonic Index, {\it n}') 
+title('Pitch Factor Amplitudes','FontSize',14)
 ylabel('|{\itK_{pn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 
 % subplot(3,1,3)
 figure(3)
-g3 = stem(h,abs(kd));
+g1 = stem(h,abs(kw));
 ax = gca;
 ax.XGrid = 'off';
 ax.YGrid = 'on';
-title('Distribution Factor Amplitudes')
+title('Winding Factor Amplitudes','FontSize',14)
 xlabel('Harmonic Index, {\it n}') 
-ylabel('|{\itK_{dn}}|')
+ylabel('|{\itK_{wn}}|')
 xticks([1 3 5 7 9 11 13 15 17 19 21])
 yticks([0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0])
 axis([0 22 0 1.1])
+set(gcf,'units','centimeters','position',[2,5,30,6])
 
 
 

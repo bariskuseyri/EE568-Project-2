@@ -1,8 +1,22 @@
 \begin{thebibliography}{1}
 
+\bibitem{ishak}
+David~Howe Dalaman~Ishak, Zi-Qiang~Zhu.
+\newblock Comparison of pm brushless motors, having either all teeth or
+  alternate teeth wound.
+\newblock {\em IEEE Transactions on Energy Conversion}, 21(1):95--103, 3 2006.
+
 \bibitem{hanselman}
-D.~C. Hanselman, {\em Brushless Permanent Magnet Motor Design}.
-\newblock 3000 M Henkle Drive, Lebanon, Ohio 45036: Magna Physics Publishing,
-  2~ed., 2006.
+Duane~C. Hanselman.
+\newblock {\em Brushless Permanent Magnet Motor Design}.
+\newblock Magna Physics Publishing, 3000 M Henkle Drive, Lebanon, Ohio 45036",
+  2 edition, 2006.
+
+\bibitem{bianchi}
+Michele Dai~Pre Nicola~Bianchi.
+\newblock Use of the star of slots in designing fractional-slot single-layer
+  synchronous motors.
+\newblock {\em IEE Proceedings - Electric Power Applications}, 153(3):459--466,
+  5 2006.
 
 \end{thebibliography}

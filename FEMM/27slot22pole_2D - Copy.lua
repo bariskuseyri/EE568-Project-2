@@ -20,6 +20,8 @@ pi = 3.1415926535897932384626433		-- defining pi constant
 stator_radius_outer = 0.050
 slot_radius_outer = 0.045
 stator_radius_inner = 0.030
+rotor_radius_outer = 0.0295
+radial_magnet_length = 0.004
 
 wire_diameter = 0.000644
 fill_factor = 0.60

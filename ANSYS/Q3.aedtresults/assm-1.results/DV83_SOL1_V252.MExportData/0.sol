@@ -89,17 +89,17 @@ B_Full-Load_Operation
  Armature_Thermal_Load 1558.16 (A^2/mm^3)
  Specific_Electric_Loading 77.5055 (A/mm)
  Armature_Current_Density 20.1038 (A/mm^2)
- Frictional_and_Windage_Loss 12 (W)
+ Frictional_and_Windage_Loss 0 (W)
  Iron-Core_Loss 28.5267 (W)
  Armature_Copper_Loss 627.624 (W)
- Total_Loss 668.151 (W)
- Output_Power 1628.15 (W)
+ Total_Loss 656.151 (W)
+ Output_Power 1640.15 (W)
  Input_Power 2296.3 (W)
- Efficiency 70.9031 (%)
+ Efficiency 71.4257 (%)
  Synchronous_Speed 1000 (rpm)
- Rated_Torque 15.5477 (N.m)
+ Rated_Torque 15.6622 (N.m)
  Torque_Angle 78 (degree)
- Maximum_Output_Power 1628.15 (W)
+ Maximum_Output_Power 1640.15 (W)
 E_Full-Load_Data
 
 B_FEA_Input_Data

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.24)  29 MAR 2020 02:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.24)  31 MAR 2020 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -46,42 +46,127 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(c:/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen105
-\WF@size=\dimen106
-\c@WF@wrappedlines=\count88
-\WF@box=\box27
-\WF@everypar=\toks15
-Package: wrapfig 2003/01/31  v 3.6
-) (./Report.aux)
+(c:/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@caption@flags=\count88
+\c@ContinuedFloat=\count89
+)
+\c@subfigure=\count90
+\c@subtable=\count91
+)
+(c:/texlive/2019/texmf-dist/tex/latex/nath/nath.sty
+
+Nath as of 21 March 2003 
+Implementing NAtural maTH notation
+\mex=\dimen112
+\protect@toks=\toks15
+\mathindent=\dimen113
+\disp@box@width=\dimen114
+\disp@width=\dimen115
+\interdisplayskip=\skip43
+\intereqnsskip=\skip44
+\belowdisplayskip@=\skip45
+\c@eqnabc=\count92
+\displaylineskip=\skip46
+\displaybaselineskip=\skip47
+\displaylineskiplimit=\dimen116
+\eqnnumlowering@=\dimen117
+\paritemwd=\dimen118
+\mathcount@=\count93
+\delimaxis@=\dimen119
+\strutsize@=\dimen120
+\curr@rm=\toks16
+\sizebox=\box27
+\sizebox@=\box28
+\idelimlevel@=\count94
+\ddelimlevel@=\count95
+\ddelim@count=\count96
+\ddcount@=\count97
+\ddcount@@=\count98
+\delimincrement@=\dimen121
+\delimgrowth@=\count99
+\ddcount@=\count100
+\big@=\count101
+\big@@=\count102
+\bigstrut@box=\box29
+\sp@toks=\toks17
+\sb@toks=\toks18
+\abbrevlength@=\count103
+\er@wd=\dimen122
+\acc@toks=\toks19
+\xheight@=\dimen123
+\htdecrement@=\dimen124
+\dpdecrement@=\dimen125
+\fracrulethickness@=\dimen126
+\wrapfrac@dim=\dimen127
+\wrapfrac@box=\box30
+\hline@num=\count104
+\arrayrowsepdim=\dimen128
+\amp@count=\count105
+) (c:/texlive/2019/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(c:/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (./Report.aux
+
+LaTeX Warning: Label `eq:distribution_factor_phasor' multiply defined.
+
+
+LaTeX Warning: Label `subfig:Q2_dist_factor_2422' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:Q2_dist_factor_2422' multiply defined.
+
+
+LaTeX Warning: Label `subfig:Q2_pitch_factor_2422' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:Q2_pitch_factor_2422' multiply defined.
+
+)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-
-(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen107
-\scratchbox=\box28
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen108
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count106
+\scratchdimen=\dimen129
+\scratchbox=\box31
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen130
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks21
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -135,16 +220,34 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \celsius on input line 8.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 8.
 
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 8.
+Package gensymb Info: Using \Omega for \ohm on input line 8.
+
+Package gensymb Warning: Not defining \micro.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
 (./Report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
+
+Overfull \hbox (2.65846pt too wide) in paragraph at lines 17--17
+ [][] []\OT1/cmr/m/n/10.95 Induced volt-age wave-forms (for phase and line-to-l
+ine) at rated 
+ []
+
 )
 \tf@toc=\write3
 \openout3 = `Report.toc'.
@@ -152,88 +255,261 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Q1_windingDiagram_1pp_dolomites.png, id=11, 233.37187pt x 307.74976pt>
+Nath Warning: No label in equation (1) on input line 25.
+Nath Warning: No label in equation (2) on input line 29.
+<Q1_windingDiagram_1pp.png, id=11, 772.98787pt x 224.33812pt>
+File: Q1_windingDiagram_1pp.png Graphic file (type png)
+<use Q1_windingDiagram_1pp.png>
+Package pdftex.def Info: Q1_windingDiagram_1pp.png  used on input line 41.
+(pdftex.def)             Requested size: 360.0pt x 104.48045pt.
+[2 <./Q1_windingDiagram_1pp.png>]
+Nath Warning: No label in equation (3) on input line 50.
+<Q1_windingDiagram_dolomites.jpg, id=19, 1224.07312pt x 1276.77pt>
+File: Q1_windingDiagram_dolomites.jpg Graphic file (type jpg)
+<use Q1_windingDiagram_dolomites.jpg>
+Package pdftex.def Info: Q1_windingDiagram_dolomites.jpg  used on input line 57
+.
+(pdftex.def)             Requested size: 216.0022pt x 225.28888pt.
+<Q1_windingDiagram_1pp_dolomites.png, id=20, 233.37187pt x 307.74976pt>
 File: Q1_windingDiagram_1pp_dolomites.png Graphic file (type png)
 <use Q1_windingDiagram_1pp_dolomites.png>
 Package pdftex.def Info: Q1_windingDiagram_1pp_dolomites.png  used on input lin
-e 22.
-(pdftex.def)             Requested size: 108.0011pt x 142.42125pt.
+e 62.
+(pdftex.def)             Requested size: 126.0022pt x 166.1589pt.
+[3 <./Q1_windingDiagram_dolomites.jpg> <./Q1_windingDiagram_1pp_dolomites.png>]
+<Q1_distributionFactor.png, id=26, 436.029pt x 100.87688pt>
+File: Q1_distributionFactor.png Graphic file (type png)
+<use Q1_distributionFactor.png>
+Package pdftex.def Info: Q1_distributionFactor.png  used on input line 124.
+(pdftex.def)             Requested size: 360.0pt x 83.29216pt.
+<Q1_pitchFactor.png, id=27, 436.029pt x 100.87688pt>
+File: Q1_pitchFactor.png Graphic file (type png)
+<use Q1_pitchFactor.png>
+Package pdftex.def Info: Q1_pitchFactor.png  used on input line 129.
+(pdftex.def)             Requested size: 360.0pt x 83.29216pt.
+<Q1_windingFactor.png, id=28, 436.029pt x 103.28587pt>
+File: Q1_windingFactor.png Graphic file (type png)
+<use Q1_windingFactor.png>
+Package pdftex.def Info: Q1_windingFactor.png  used on input line 134.
+(pdftex.def)             Requested size: 360.0pt x 85.28122pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
+<Q1_MMFWaveform.png, id=35, 483.60675pt x 173.74913pt>
+File: Q1_MMFWaveform.png Graphic file (type png)
+<use Q1_MMFWaveform.png>
+Package pdftex.def Info: Q1_MMFWaveform.png  used on input line 149.
+(pdftex.def)             Requested size: 323.9978pt x 116.40599pt.
 
 
-Package wrapfig Warning: Collision between wrapping environments on input line 
-29.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Q1_windingDiagram_1pp.png, id=13, 767.86874pt x 215.30438pt>
-File: Q1_windingDiagram_1pp.png Graphic file (type png)
-<use Q1_windingDiagram_1pp.png>
-Package pdftex.def Info: Q1_windingDiagram_1pp.png  used on input line 32.
-(pdftex.def)             Requested size: 360.0pt x 100.94339pt.
+[5 <./Q1_distributionFactor.png> <./Q1_pitchFactor.png> <./Q1_windingFactor.png
+>]
+Nath Warning: No label in equation (7) on input line 162.
+Nath Warning: No label in equation (8) on input line 166.
+Nath Warning: No label in equation (9) on input line 181.
 
-Overfull \hbox (180.0pt too wide) in paragraph at lines 32--33
- [] 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./Q1_MMFWaveform.png>]
+<Q2_2722_starofSlots_mechanical.png, id=42, 207.47513pt x 196.63463pt>
+File: Q2_2722_starofSlots_mechanical.png Graphic file (type png)
+<use Q2_2722_starofSlots_mechanical.png>
+Package pdftex.def Info: Q2_2722_starofSlots_mechanical.png  used on input line
+ 226.
+(pdftex.def)             Requested size: 161.9989pt x 153.5364pt.
+<Q2_2722_starofSlots_electrical.png, id=43, 207.47513pt x 196.63463pt>
+File: Q2_2722_starofSlots_electrical.png Graphic file (type png)
+<use Q2_2722_starofSlots_electrical.png>
+Package pdftex.def Info: Q2_2722_starofSlots_electrical.png  used on input line
+ 233.
+(pdftex.def)             Requested size: 161.9989pt x 153.5364pt.
+ [7 <./Q2_2722_starofSlots_mechanical.png> <./Q2_2722_starofSlots_electrical.pn
+g>]
+<Q2_2722_phasorDiagram_wSectors.png, id=48, 207.47513pt x 196.63463pt>
+File: Q2_2722_phasorDiagram_wSectors.png Graphic file (type png)
+<use Q2_2722_phasorDiagram_wSectors.png>
+Package pdftex.def Info: Q2_2722_phasorDiagram_wSectors.png  used on input line
+ 249.
+(pdftex.def)             Requested size: 216.0022pt x 204.72021pt.
+<Q2_2722_phasorDiagram_1ph.png, id=49, 484.51013pt x 246.9225pt>
+File: Q2_2722_phasorDiagram_1ph.png Graphic file (type png)
+<use Q2_2722_phasorDiagram_1ph.png>
+Package pdftex.def Info: Q2_2722_phasorDiagram_1ph.png  used on input line 261.
+
+(pdftex.def)             Requested size: 360.0pt x 183.46954pt.
+ [8 <./Q2_2722_phasorDiagram_wSectors.png> <./Q2_2722_phasorDiagram_1ph.png>]
+<Q2_2722_distributionFactor.png, id=53, 436.029pt x 102.08138pt>
+File: Q2_2722_distributionFactor.png Graphic file (type png)
+<use Q2_2722_distributionFactor.png>
+Package pdftex.def Info: Q2_2722_distributionFactor.png  used on input line 304
+.
+(pdftex.def)             Requested size: 360.0pt x 84.2867pt.
+<Q2_2722_pitchFactor.png, id=54, 436.029pt x 102.08138pt>
+File: Q2_2722_pitchFactor.png Graphic file (type png)
+<use Q2_2722_pitchFactor.png>
+Package pdftex.def Info: Q2_2722_pitchFactor.png  used on input line 309.
+(pdftex.def)             Requested size: 360.0pt x 84.2867pt.
+<Q2_2722_windingFactor.png, id=55, 436.029pt x 104.7915pt>
+File: Q2_2722_windingFactor.png Graphic file (type png)
+<use Q2_2722_windingFactor.png>
+Package pdftex.def Info: Q2_2722_windingFactor.png  used on input line 314.
+(pdftex.def)             Requested size: 360.0pt x 86.5244pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q2_2422_starofSlots_mechanical.png, id=56, 207.47513pt x 196.93575pt>
+File: Q2_2422_starofSlots_mechanical.png Graphic file (type png)
+<use Q2_2422_starofSlots_mechanical.png>
+Package pdftex.def Info: Q2_2422_starofSlots_mechanical.png  used on input line
+ 370.
+(pdftex.def)             Requested size: 161.9989pt x 153.77151pt.
+<Q2_2422_starofSlots_electrical.png, id=57, 207.47513pt x 196.63463pt>
+File: Q2_2422_starofSlots_electrical.png Graphic file (type png)
+<use Q2_2422_starofSlots_electrical.png>
+Package pdftex.def Info: Q2_2422_starofSlots_electrical.png  used on input line
+ 375.
+(pdftex.def)             Requested size: 161.9989pt x 153.5364pt.
+[9]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Q2_2422_phasorDiagram_wSectors.png, id=61, 207.47513pt x 207.174pt>
+File: Q2_2422_phasorDiagram_wSectors.png Graphic file (type png)
+<use Q2_2422_phasorDiagram_wSectors.png>
+Package pdftex.def Info: Q2_2422_phasorDiagram_wSectors.png  used on input line
+ 386.
+(pdftex.def)             Requested size: 216.0022pt x 215.69295pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q2_2422_phasorDiagram_1ph.png, id=62, 484.51013pt x 246.9225pt>
+File: Q2_2422_phasorDiagram_1ph.png Graphic file (type png)
+<use Q2_2422_phasorDiagram_1ph.png>
+Package pdftex.def Info: Q2_2422_phasorDiagram_1ph.png  used on input line 394.
+
+(pdftex.def)             Requested size: 360.0pt x 183.46954pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./Q2_2722_distributionFactor.png> <./Q2_2722_pitchFactor.png> <./Q2_2722_w
+indingFactor.png>] [11 <./Q2_2422_starofSlots_mechanical.png> <./Q2_2422_starof
+Slots_electrical.png> <./Q2_2422_phasorDiagram_wSectors.png>]
+<Q2_2422_distributionFactor.png, id=69, 436.029pt x 104.7915pt>
+File: Q2_2422_distributionFactor.png Graphic file (type png)
+<use Q2_2422_distributionFactor.png>
+Package pdftex.def Info: Q2_2422_distributionFactor.png  used on input line 433
+.
+(pdftex.def)             Requested size: 360.0pt x 86.5244pt.
+<Q2_2422_pitchFactor.png, id=70, 436.029pt x 104.7915pt>
+File: Q2_2422_pitchFactor.png Graphic file (type png)
+<use Q2_2422_pitchFactor.png>
+Package pdftex.def Info: Q2_2422_pitchFactor.png  used on input line 438.
+(pdftex.def)             Requested size: 360.0pt x 86.5244pt.
+<Q2_2422_windingFactor.png, id=71, 436.029pt x 104.7915pt>
+File: Q2_2422_windingFactor.png Graphic file (type png)
+<use Q2_2422_windingFactor.png>
+Package pdftex.def Info: Q2_2422_windingFactor.png  used on input line 443.
+(pdftex.def)             Requested size: 360.0pt x 86.5244pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./Q2_2422_phasorDiagram_1ph.png>] [13 <./Q2_2422_distributionFactor.png> <
+./Q2_2422_pitchFactor.png> <./Q2_2422_windingFactor.png>]
+Overfull \hbox (52.4059pt too wide) in paragraph at lines 468--480
+ [][] 
  []
 
+<Q3_2D.png, id=79, 666.69075pt x 313.77225pt>
+File: Q3_2D.png Graphic file (type png)
+<use Q3_2D.png>
+Package pdftex.def Info: Q3_2D.png  used on input line 492.
+(pdftex.def)             Requested size: 360.0pt x 169.42969pt.
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 39
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q3_2D_FEMM.png, id=80, 168.93112pt x 167.4255pt>
+File: Q3_2D_FEMM.png Graphic file (type png)
+<use Q3_2D_FEMM.png>
+Package pdftex.def Info: Q3_2D_FEMM.png  used on input line 501.
+(pdftex.def)             Requested size: 216.0022pt x 214.08675pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q3_winding_diagram.png, id=81, 577.25662pt x 313.77225pt>
+File: Q3_winding_diagram.png Graphic file (type png)
+<use Q3_winding_diagram.png>
+Package pdftex.def Info: Q3_winding_diagram.png  used on input line 512.
+(pdftex.def)             Requested size: 360.0pt x 195.68105pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q3_airgapFluxDensity.png, id=82, 936.49875pt x 368.87813pt>
+File: Q3_airgapFluxDensity.png Graphic file (type png)
+<use Q3_airgapFluxDensity.png>
+Package pdftex.def Info: Q3_airgapFluxDensity.png  used on input line 525.
+(pdftex.def)             Requested size: 288.0011pt x 113.4392pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Q3_inducedVoltageWaveforms.png, id=83, 936.49875pt x 368.87813pt>
+File: Q3_inducedVoltageWaveforms.png Graphic file (type png)
+<use Q3_inducedVoltageWaveforms.png>
+Package pdftex.def Info: Q3_inducedVoltageWaveforms.png  used on input line 538
 .
+(pdftex.def)             Requested size: 360.0pt x 141.8018pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
+<Q3_coggingTorque_0to35.png, id=87, 936.49875pt x 368.87813pt>
+File: Q3_coggingTorque_0to35.png Graphic file (type png)
+<use Q3_coggingTorque_0to35.png>
+Package pdftex.def Info: Q3_coggingTorque_0to35.png  used on input line 553.
+(pdftex.def)             Requested size: 360.0pt x 141.8018pt.
+<Q3_coggingTorque_0to360.png, id=88, 936.49875pt x 368.87813pt>
+File: Q3_coggingTorque_0to360.png Graphic file (type png)
+<use Q3_coggingTorque_0to360.png>
+Package pdftex.def Info: Q3_coggingTorque_0to360.png  used on input line 558.
+(pdftex.def)             Requested size: 360.0pt x 141.8018pt.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 41
-.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[15 <./Q3_2D.png> <./Q3_2D_FEMM.png>] (./Report.bbl) [16 <./Q3_winding_diagram.
+png> <./Q3_airgapFluxDensity.png>] [17 <./Q3_inducedVoltageWaveforms.png> <./Q3
+_coggingTorque_0to35.png> <./Q3_coggingTorque_0to360.png>] (./Report.aux)
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
-.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 43
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 45
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 46
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 47
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 49
-.
-
-[2 <./Q1_windingDiagram_1pp_dolomites.png> <./Q1_windingDiagram_1pp.png>]
-(./Report.bbl
-Underfull \hbox (badness 3209) in paragraph at lines 4--7
-[]\OT1/cmr/m/n/10.95 D. C. Hansel-man, \OT1/cmr/m/it/10.95 Brush-less
- []
-
-) [3] (./Report.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 1609 strings out of 492164
- 22729 string characters out of 6129087
- 88618 words of memory out of 5000000
- 5968 multiletter control sequences out of 15000+600000
+ 3546 strings out of 492164
+ 55341 string characters out of 6129087
+ 133607 words of memory out of 5000000
+ 7862 multiletter control sequences out of 15000+600000
  9157 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,32p,296b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (3 pages, 150621 bytes).
+ 55i,24n,49p,1310b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Report.pdf (17 pages, 1423331 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

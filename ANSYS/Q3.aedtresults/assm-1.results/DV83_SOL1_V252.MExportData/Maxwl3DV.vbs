@@ -545,9 +545,9 @@ oModule.AssignBand Array("NAME:MotionSetup1", "Move Type:=", "Rotate", _
   "Coordinate System:=", "Global", "Axis:=", "Z", "Is Positive:=", true, _
   "InitPos:=", "7.57576deg", "HasRotateLimit:=", false, "NonCylindrical:=", _
   false, "Consider Mechanical Transient:=", true, "Angular Velocity:=", _
-  "1000rpm", "Moment of Inertia:=", 0.000927903, "Damping:=", 0.00369559, _
+  "1000rpm", "Moment of Inertia:=", 0.000927903, "Damping:=", 0.00260132, _
   "Load Torque:=", _
-  "if(speed<104.72, -0.148469*speed, -1628.15/speed) - 0.148469*(speed-104.72)*10", _
+  "if(speed<104.72, -0.149563*speed, -1640.15/speed) - 0.149563*(speed-104.72)*10", _
   "Objects:=", Array("Band"))
 oModule.EditMotionSetup Array("NAME:Data", "Consider Mechanical Transient:=", _
   false)
