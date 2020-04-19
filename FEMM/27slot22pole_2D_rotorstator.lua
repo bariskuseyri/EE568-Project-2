@@ -3,18 +3,18 @@ newdocument(0)			-- 0: magnetic problem
 						-- 2: heat flow problem
 						-- 3: current flow problem
 
-
+-- ERROR: mi_addarc arc segment degree is given in radians | should be in degrees
 -- Display
 
 stator = 1
-rotor = 0
+rotor = 1
 
 
 -- Machine Parameters
 
 
-Ns = 27			-- Number of slots
-pp = 11			-- Number of pole-pairs
+Ns = 12			-- Number of slots
+pp = 2			-- Number of pole-pairs
 p = pp*2		-- Number of poles
 
 I_rms = 5*10^-6 -- current density [A/mm2]
@@ -29,8 +29,8 @@ stator_radius_inner = 0.030
 rotor_radius_outer = 0.029
 radial_magnet_length = 0.004
 shaft_radius = 0.010
-magnet_arc = 0.8
-slot_arc = 0.8
+magnet_arc = 0.9
+slot_arc = 0.6
 
 double_layer = 0
 
@@ -94,14 +94,14 @@ if stator == 1 then
 
 		for n = 0, (2*Ns) do
 
-			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),(2*pi)/(2*Ns),1)
-			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(2*pi)/(2*Ns),1)
+			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),(360)/(2*Ns),1)
+			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(360)/(2*Ns),1)
 
 
-			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(2*pi)/(2*Ns),1)
+			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(360)/(2*Ns),1)
 
-			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),(2*pi)/(2*Ns),1)
-			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(2*pi)/(2*Ns),1)
+			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),(360)/(2*Ns),1)
+			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(360)/(2*Ns),1)
 
 		end
 
@@ -111,7 +111,7 @@ if stator == 1 then
 			mi_addsegment(slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*2*Ns))),stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*2*Ns))))
 			mi_addsegment(slot_radius_outer*cos(n*(2*pi)/(2*Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(2*Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(2*Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(2*Ns)+(1-slot_arc)*(2*pi)/(2*Ns)))
 			mi_addsegment(slot_radius_outer*cos(n*(2*pi)/(2*Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(2*Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(2*Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(2*Ns)-(1-slot_arc)*(2*pi)/(2*Ns)))
-			--mi_addsegment(stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))))
+			mi_addsegment(stator_radius_inner*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),stator_radius_inner*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*cos(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))),slot_radius_outer*sin(n*(2*pi)/(Ns)+((2*pi)/(2*Ns))))
 		end
 
 		for n = 0, Ns do
@@ -135,9 +135,9 @@ if stator == 1 then
 
 		for n = 0, (2*Ns) do
 
-			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(2*pi)/(2*Ns),1)
-			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(2*pi)/(2*Ns),1)
-			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(2*pi)/(2*Ns),1)
+			mi_addarc(slot_radius_outer*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),slot_radius_outer*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),(360)/(2*Ns),1)
+			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(360)/(2*Ns),1)
+			mi_addarc(stator_radius_inner*cos(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin(n*(2*pi)/(Ns)+(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*cos((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),stator_radius_inner*sin((n+1)*(2*pi)/(Ns)-(1-slot_arc)*(2*pi)/(2*Ns)),2*(1-slot_arc)*(360)/(2*Ns),1)
 		
 		end
 
@@ -168,10 +168,10 @@ if rotor == 1 then
 
 	for n = 0, (2*p) do
 
-		mi_addarc((rotor_radius_outer-radial_magnet_length)*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),((2*pi)/(p))-(1-magnet_arc)*(2*pi)/(p),1)
-		mi_addarc((rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),2*(1-magnet_arc)*(2*pi)/(p),1)
+		mi_addarc((rotor_radius_outer-radial_magnet_length)*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),((360)/(p))-(1-magnet_arc)*(360)/(p),1)
+		mi_addarc((rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos((n+1)*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin((n+1)*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),2*(1-magnet_arc)*(360)/(p),1)
 		
-		mi_addarc(rotor_radius_outer*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),((2*pi)/(2*p))-(1-magnet_arc)*(2*pi)/(2*2*p),1)
+		mi_addarc(rotor_radius_outer*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*cos((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin((n+1)*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),magnet_arc*(360/p),1)
 
 		mi_addsegment(rotor_radius_outer*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin(n*(2*pi)/(p)+(1-magnet_arc)*(2*pi)/(p)))
 		mi_addsegment(rotor_radius_outer*cos(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(p)))
@@ -195,7 +195,6 @@ end
 
 
 
-
 A_pos={1, 6, 11, 18, 23}
 A_neg={7, 12, 17, 22}
 
@@ -204,6 +203,7 @@ B_neg={3, 8, 13, 25}
 
 C_pos={5, 10, 15, 20, 27}
 C_neg={4, 16, 21, 26}
+
 
 
 for n = 1, 5 do

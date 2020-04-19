@@ -54,7 +54,7 @@ pole_pair = 11
 
 
 open(source_file)			-- open orignal femm source
-mi_saveas("../out/temp/temp.fem")	-- save temporay
+mi_saveas("../out/temp/temp.fem")	-- save temporary
 
 for n = 0,30,15 do		-- do repeat
 
