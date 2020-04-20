@@ -8,6 +8,8 @@ newdocument(0)			-- 0: magnetic problem
 
 stator = 1
 rotor = 1
+shaft = 1
+double_layer = 0
 
 
 -- Machine Parameters
@@ -27,12 +29,12 @@ stator_radius_outer = 0.050
 slot_radius_outer = 0.045
 stator_radius_inner = 0.030
 rotor_radius_outer = 0.029
+region_radius = (2*stator_radius_outer-stator_radius_inner)
 radial_magnet_length = 0.004
 shaft_radius = 0.010
 magnet_arc = 0.9
 slot_arc = 0.6
 
-double_layer = 0
 
 wire_diameter = 0.000644
 fill_factor = 0.60
@@ -47,8 +49,9 @@ N_cond = (slot_area*fill_factor)/wire_area
 
 mi_getmaterial('Air')
 mi_getmaterial('22 AWG')
-mi_getmaterial('N40')
+mi_getmaterial('N45')
 mi_getmaterial('M-15 Steel')
+mi_getmaterial('Hiperco-50')
 
 
 
@@ -57,6 +60,23 @@ mi_addcircprop('A', I, 1)
 mi_addcircprop('B', I, 1)
 mi_addcircprop('C', I, 1)
 
+-- region boundary
+mi_addnode(region_radius,0)
+mi_addnode((-1)*region_radius,0)
+mi_addarc(region_radius,0,(-1)*region_radius,0,180,1)
+mi_addarc((-1)*region_radius,0,region_radius,0,180,1)
+
+mi_addblocklabel(0,region_radius-0.001)
+mi_selectlabel(0,region_radius-0.001)
+mi_setblockprop('Air', 1, 0, 0, 0, 0, 0)
+mi_selectlabel(0,region_radius-0.001)
+
+--airgap 
+
+mi_addblocklabel(0,stator_radius_inner-0.001)
+mi_selectlabel(0,stator_radius_inner-0.001)
+mi_setblockprop('Air', 1, 0, 0, 0, 0, 0)
+mi_selectlabel(0,stator_radius_inner-0.001)
 
 if stator == 1 then
 
@@ -66,9 +86,11 @@ if stator == 1 then
 	mi_addarc(stator_radius_outer,0,(-1)*stator_radius_outer,0,180,1)
 	mi_addarc((-1)*stator_radius_outer,0,stator_radius_outer,0,180,1)
 
-	mi_addblocklabel(0,stator_radius_outer-0.001)
-	mi_addblocklabel(0,stator_radius_outer+0.001)
 
+	mi_addblocklabel(0,stator_radius_outer-0.001)
+	mi_selectlabel(0,stator_radius_outer-0.001)
+	mi_setblockprop('Hiperco-50', 1, 0, 0, 0, 0, 0)
+	mi_selectlabel(0,stator_radius_outer-0.001)
 
 
 
@@ -177,7 +199,16 @@ if rotor == 1 then
 		mi_addsegment(rotor_radius_outer*cos(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),rotor_radius_outer*sin(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*cos(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(2*p)),(rotor_radius_outer-radial_magnet_length)*sin(n*(2*pi)/(p)-(1-magnet_arc)*(2*pi)/(p)))
 
 	end
+
+
+	mi_addblocklabel(0,(rotor_radius_outer+shaft_radius)/2)
+	mi_selectlabel(0,(rotor_radius_outer+shaft_radius)/2)
+	mi_setblockprop('M-15', 1, 0, 0, 0, 0, 0)
+	mi_selectlabel(0,(rotor_radius_outer+shaft_radius)/2)
+
+
 else
+
 
 end
 
@@ -190,6 +221,12 @@ if shaft == 1 then
 	mi_addnode((-1)*shaft_radius,0)
 	mi_addarc(shaft_radius,0,(-1)*shaft_radius,0,180,1)
 	mi_addarc((-1)*shaft_radius,0,shaft_radius,0,180,1)
+
+	mi_addblocklabel(0,shaft_radius-0.001)
+	mi_selectlabel(0,shaft_radius-0.001)
+	mi_setblockprop('Air', 1, 0, 0, 0, 0, 0)
+	mi_selectlabel(0,shaft_radius-0.001)
+
 else
 end
 
@@ -251,5 +288,17 @@ for n = 1, 4 do
 	mi_selectlabel(((slot_radius_outer+stator_radius_inner)/2)*cos((C_neg[n]*(2*pi)/Ns)+((2*pi)/(2*2*Ns))),((slot_radius_outer+stator_radius_inner)/2)*sin((C_neg[n]*(2*pi)/Ns)+((2*pi)/(2*2*Ns))))
 	mi_setblockprop('22 AWG', 1, 0, 'C', 0, 0, (-1)*N_cond)
 	mi_selectlabel(((slot_radius_outer+stator_radius_inner)/2)*cos((C_neg[n]*(2*pi)/Ns)+((2*pi)/(2*2*Ns))),((slot_radius_outer+stator_radius_inner)/2)*sin((C_neg[n]*(2*pi)/Ns)+((2*pi)/(2*2*Ns))))
+	
+end
+
+
+
+for n = 0, (2*pi-1) do
+
+	mi_addblocklabel((rotor_radius_outer-(radial_magnet_length/2))*cos(n*(2*pi)/(p)+(pi/p)),(rotor_radius_outer-(radial_magnet_length/2))*sin(n*(2*pi)/(p)+(pi/p)))
+
+	mi_selectlabel((rotor_radius_outer-(radial_magnet_length/2))*cos(((2*n+1)/2)*(2*pi)/(p)),(rotor_radius_outer-(radial_magnet_length/2))*sin(((2*n+1)/2)*(2*pi)/(p)))
+	mi_setblockprop('N45', 1, 0, 0, 45+90*n + n*180, 0, 0)
+	mi_selectlabel((rotor_radius_outer-(radial_magnet_length/2))*cos(((2*n+1)/2)*(2*pi)/(p)),(rotor_radius_outer-(radial_magnet_length/2))*sin(((2*n+1)/2)*(2*pi)/(p)))
 	
 end
